@@ -16,7 +16,7 @@ export function modalView() {
             closeModal.id = "close";
             closeModal.innerHTML = `<span id= "close">X</span>`;
 
-            modalContainer.innerHTML = `<img src="${e.src}" alt="${e.alt}" width="500">`;
+            modalContainer.innerHTML = `<img src="${e.src}" alt="${e.alt}">`;
 
             modalSection.appendChild(modalContainer);
             modalSection.appendChild(closeModal);
