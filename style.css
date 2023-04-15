@@ -45,6 +45,9 @@ header {
     font-family: var(--primary-font);
     letter-spacing: .2rem;
 }
+.main{
+    min-height: 100vh;
+}
 
 .galeria {
     display: flex;
@@ -58,15 +61,16 @@ header {
     margin: 1rem;
     box-shadow: 0px 0px 60px -2px;
     transition: transform 1s;
+    cursor: pointer;
 }
 
 .galeria img:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     box-shadow: none;
 }
 
 .modal {
-    padding:2rem 0;
+    padding: 6rem 0;
     position: fixed;
     overflow: scroll;
     top: 0px;
@@ -88,16 +92,31 @@ header {
     align-items: center;
     transition: transform .5s;
 }
+.modal__container img{
+     width: 50%;  
+}
 
 span#close {
     font-size: 3rem;
     top: 10px;
     right: 10px;
     position: inherit;
+    font-family: var(--primary-font);
+    cursor: pointer;
+    background: var(--primary-color);
+    padding: 0 1.3rem;
+    border-radius: 5rem;
 }
 
 footer {
     background: var(--primary-color);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .footer__text {

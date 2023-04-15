@@ -14,7 +14,7 @@ export function modalView() {
 
             let closeModal = document.createElement("span");
             closeModal.id = "close";
-            closeModal.innerHTML = `<span id= "close">X</span>`;
+            closeModal.innerHTML = `X`;
 
             modalContainer.innerHTML = `<img src="${e.src}" alt="${e.alt}">`;
 
