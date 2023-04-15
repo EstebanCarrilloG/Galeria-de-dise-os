@@ -11,6 +11,7 @@ export function modalView() {
 
             let modalContainer = document.createElement("div");
             modalContainer.classList.add("modal__container");
+            
 
             let closeModal = document.createElement("span");
             closeModal.id = "close";
