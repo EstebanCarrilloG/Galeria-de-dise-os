@@ -101,7 +101,7 @@ span#close {
     top: 10px;
     right: 10px;
     position: inherit;
-    font-family: var(--primary-font);
+    font-family: cursive;
     cursor: pointer;
     background: var(--primary-color);
     padding: 0 1.3rem;
