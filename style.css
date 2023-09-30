@@ -68,7 +68,17 @@ header {
 
 .img-container {
   background:linear-gradient(to bottom, var(--url-color), #eba01c9c);
+  animation: showImgs 1s ease-in-out;
   
+}
+
+@keyframes showImgs {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
  #img:hover {
