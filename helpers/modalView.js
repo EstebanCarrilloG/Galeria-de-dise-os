@@ -1,3 +1,4 @@
+import imgsDb from "../database/imgsDb.js";
 export function modalView() {
   let main = document.querySelector("main");
 
@@ -8,7 +9,7 @@ export function modalView() {
 
     if (e.target.className === "gallery-img") {
       e = e.target;
-      console.log(true);
+
       let modalSection = document.createElement("section");
       modalSection.classList.add("modal");
       modalSection.id = "modal";
@@ -21,10 +22,11 @@ export function modalView() {
       closeModal.id = "close";
       closeModal.innerHTML = `X`;
 
-      modalContainer.innerHTML = `<img src="${e.src}" alt="${e.alt}">`;
+      modalContainer.innerHTML = `<img src="${e.src}" alt="${e.alt}">
+      <p>${e.alt}</p>`;
 
       modalSection.appendChild(modalContainer);
-      modalSection.appendChild(closeModal);
+      modalContainer.appendChild(closeModal);
 
       modalContainer.style.transform = "scale(0.0)";
       setTimeout(() => {
