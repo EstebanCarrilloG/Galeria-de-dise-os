@@ -5,7 +5,7 @@ function showImages(result) {
     let imgContainer = document.createElement("div");
     imgContainer.classList.add("img-container");
 
-    let rndNumber = getRandomInt(-7, 7);
+    let rndNumber = getRandomInt(-5, 5);
     let img = document.createElement("img");
     img.className = "gallery-img";
 
@@ -19,7 +19,7 @@ function showImages(result) {
 
     setTimeout(function () {
       galeria.appendChild(imgContainer);
-    }, i * 1000);
+    }, i * 500);
   });
 }
 
